@@ -7,4 +7,5 @@ import jp.kobe_u.cs.daikibo.tsubuyaki.entity.Tsubuyaki;
 
 @Repository
 public interface TsubuyakiRepository extends CrudRepository<Tsubuyaki, Long> {
+    public Iterable<Tsubuyaki> findTubuyakiByCommentContaining(String keyword);
 }
